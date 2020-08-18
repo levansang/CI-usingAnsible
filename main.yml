@@ -3,7 +3,10 @@
   become: true
   become_user: root
   gather_facts: false
+  vars:
+   ansible_sudo_pass: 1
   tasks:
     - include_role:
         name: tomcat
       
+  
